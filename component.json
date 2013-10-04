@@ -1,0 +1,14 @@
+{
+  "name": "stdunit",
+  "repo": "em/stdunit",
+  "description": "Parse and convert standard units of measurement.",
+  "version": "0.0.0",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
