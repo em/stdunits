@@ -1,6 +1,6 @@
 {
   "name": "stdunits",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Parse and normalize units so 0.1cm 0.001m and 0.039in all become 1mm.",
   "main": "index.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "em/units.js"
+    "url": "em/stdunits.js"
   },
   "devDependencies": {
     "component": "*",
