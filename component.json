@@ -1,8 +1,8 @@
 {
-  "name": "stdunit",
-  "repo": "em/stdunit",
+  "name": "stdunits",
+  "repo": "em/stdunits",
   "description": "Parse and convert standard units of measurement.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "keywords": [],
   "dependencies": {},
   "development": {},
