@@ -73,7 +73,7 @@ stdunit.define({
 , "ft,'": 25.4*12
 , 'pt': 1/72*25.4
 , 'px': function(ctx) {
-    return 25.4 / ctx.dpi;
+    return 25.4 / (ctx.ppi || 96);
   }
 , '%': function(ctx) {
     return stdunit.to('mm', ctx.scale)/100; 

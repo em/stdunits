@@ -15,7 +15,9 @@ stdunits.find('10m 55in', 'mm'); // [ 1000, 1397 ]
 ```
 
 ## Pixels and Percents
-Some things require context. For instance, the px unit is only bound to real world measurement (such as pt) through a DPI (dots per inch). Your browser usually get this from the OS. To support px and % you have to provide the context:
+Some things require context.
+For instance, the px unit is only bound to real world measurement (such as pt) through a PPI (pixels per inch).
+The web has a fixed PPI of 96 regardless of the device. Naturally, stdunits uses 96 as the default, but it can be overriden.
 
 ```
 stdunits.to('px', '32pt', {
