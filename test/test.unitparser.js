@@ -28,12 +28,12 @@ describe('to', function() {
   });
 
   it('derives units from context', function() {
-    var result = stdunit.to('px', '1in', {dpi: 100});
+    var result = stdunit.to('px', '1in', {ppi: 100});
     expect(result).eq(100);
   });
 
   it('contextual units work both ways', function() {
-    var result = stdunit.to('in', '100px', {dpi: 100});
+    var result = stdunit.to('in', '100px', {ppi: 100});
     expect(result).closeTo(1, 0.0001);
   });
 
@@ -43,7 +43,7 @@ describe('to', function() {
   });
 
   it('multi contextual', function() {
-    var result = stdunit.to('px', '100%', {scale: 25.4, dpi:10});
+    var result = stdunit.to('px', '100%', {scale: 25.4, ppi:10});
     expect(result).closeTo(10, 0.0001);
   });
 
