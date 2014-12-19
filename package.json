@@ -1,6 +1,6 @@
 {
   "name": "stdunits",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parse and normalize units so 0.1cm 0.001m and 0.039in all become 1mm.",
   "main": "index.js",
   "directories": {

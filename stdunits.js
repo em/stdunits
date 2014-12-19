@@ -42,7 +42,8 @@ var stdunit = module.exports = {
     //                      number     unit
     var match = src.match(/([+-\d\.]*)(.*)/);
 
-    var srcVal = Number(match[1]) || 1;
+    var srcVal = match[1] === '' ? 1 : Number(match[1]);
+
     var srcUnit = match[2] || destUnit;
 
     var srcToBase = this.procDef(srcUnit, ctx); 

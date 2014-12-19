@@ -2,7 +2,7 @@
   "name": "stdunits",
   "repo": "em/stdunits",
   "description": "Parse and convert standard units of measurement.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [],
   "dependencies": {},
   "development": {},

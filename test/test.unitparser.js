@@ -47,6 +47,17 @@ describe('to', function() {
     expect(result).closeTo(10, 0.0001);
   });
 
+  it('handles 0', function() {
+    var result = stdunit.to('px', '0in');
+    expect(result).eq(0);
+  });
+
+  it('handles blank number', function() {
+    var result = stdunit.to('px', 'in');
+    expect(result).eq(96);
+  });
+
+
 });
 
 
