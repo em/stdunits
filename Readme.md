@@ -21,7 +21,7 @@ The web has a fixed PPI of 96 regardless of the device. Naturally, stdunits uses
 
 ```
 stdunits.to('px', '32pt', {
-  dpi: 60
+  ppi: 60
 });
 
 // returns 10px
