@@ -39,15 +39,15 @@ var stdunit = module.exports = {
 
     ctx = ctx || {};
 
-    //                      number     unit
-    var match = src.match(/([+-\d\.]*)(.*)/);
+    //                       number    unit
+    var match = src.match(/([+\-\d\.]*)(.*)/);
 
     var srcVal = match[1] === '' ? 1 : Number(match[1]);
 
     var srcUnit = match[2] || destUnit;
 
-    var srcToBase = this.procDef(srcUnit, ctx); 
-    var baseToDest = 1/this.procDef(destUnit, ctx); 
+    var srcToBase = this.procDef(srcUnit, ctx);
+    var baseToDest = 1/this.procDef(destUnit, ctx);
 
     return srcVal * srcToBase * baseToDest;
   }
@@ -68,16 +68,16 @@ var stdunit = module.exports = {
 stdunit.define({
   'mm': 1
 , 'cm': 10
-, 'm': 10*10 
-, 'km': 10*10*10 
-, 'in,"': 25.4 
+, 'm': 10*10
+, 'km': 10*10*10
+, 'in,"': 25.4
 , "ft,'": 25.4*12
 , 'pt': 1/72*25.4
 , 'px': function(ctx) {
     return 25.4 / (ctx.ppi || 96);
   }
 , '%': function(ctx) {
-    return stdunit.to('mm', ctx.scale)/100; 
+    return stdunit.to('mm', ctx.scale)/100;
   }
 });
 
